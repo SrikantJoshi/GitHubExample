@@ -1,0 +1,132 @@
+<apex:page >
+    <script type="text/javascript">
+
+function displayInsideBlueData(parsedContent, callback) {
+    var displayLimit = 0; //zero incremented
+    var maxTitleLen = 400;
+
+    var contentObj = parsedContent;
+
+    var targetDiv = document.getElementById('ContentBody');
+    targetDiv.innerHTML = '';
+
+    //set default output to no content message
+    var formattedContent = '';
+    formattedContent = contentObj.content.text;
+    /*if there are content items in response list, process template
+    if (contentArray.length > 0) {
+
+        for (var j = 0; (j < contentArray.length) ; j++) {
+
+            
+
+                displayLimit++;
+
+                if (displayLimit >= 6)
+                    break;
+
+                var tempContent = contentArray[j].subject;
+                
+
+                if (contentArray[j].subject.length > maxTitleLen)
+                    tempContent += "...";
+
+                formattedContent +=  tempContent;
+
+           
+        }
+    } else
+        formattedContent = '<span>No trending content</span>';
+*/
+    targetDiv.innerHTML = formattedContent;
+    
+    callback("success");
+
+}
+function Ajax_GetNetowrkCall(url, callBackFunction) {
+    
+    var response;
+
+    if (window.XDomainRequest) {
+        // Use Microsoft XDR
+        var xdr = new XDomainRequest();
+        xdr.open("get", url);
+
+        //xdr.CacheControl = "no-cache"; //didnt work
+        xdr.onprogress = function() { };
+        xdr.ontimeout = function() { };
+        xdr.onerror = function(errormsg) {
+            //alert('xdr error: ' + errormsg); 
+        };
+
+        xdr.onload = function() {
+            if (xdr && xdr.responseText.indexOf('"list":') > -1) {
+                response = JSON.parse(xdr.responseText);
+            } else {
+                response = { "list": [] };
+            }
+            (callBackFunction)(response);
+        };
+
+        setTimeout(function() { xdr.send(); }, 0);
+    } else if (window.XMLHttpRequest) {
+        var xmlHttp = new XMLHttpRequest();
+
+        // Create result handler
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.readyState == 4) {
+                //check for error header on jive response and strip out. Not parsing json as displayTrendingData() handles that.
+                if (xmlHttp && xmlHttp.responseText.indexOf("Error:") != 0) {
+                    response = JSON.parse(xmlHttp.responseText);
+                    
+                    
+                    (callBackFunction)(response);
+                }
+            } //end if 4
+        } //end on ready
+
+        // Send the GET request
+        xmlHttp.open("GET", url, true);
+        xmlHttp.setRequestHeader("Accept", "application/json");
+        xmlHttp.setRequestHeader("Cache-Control", "no-cache"); //bug in FF ignores this 
+        //xmlHttp.withCredentials = true;
+        xmlHttp.send();
+    } else
+        alert('XMLHttpRequest not supported');
+} //end GetNetowrkCall
+
+
+
+function getInsideBlueContent(source, callback) {
+    var url = "https://orsl2jv3adv01.eg.intel.com/vinod_poc"
+    Ajax_GetNetowrkCall(url, function(data) {
+        displayInsideBlueData(data, function() {
+            callback();
+        });
+    });
+}
+
+
+(function() {
+
+
+    var tId = setInterval(function() { if (document.readyState == "complete") onComplete() }, 11);
+    function onComplete() {
+        clearInterval(tId);
+
+        var source = "vinod_poc";
+        getInsideBlueContent(source, function() {
+            
+        });
+    };
+})()
+    
+ 
+    </script>
+  <!-- Begin Default Content REMOVE THIS -->
+    
+    <div id="ContentBody" > Testing Content Viewer</div>
+    
+        This is the end
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

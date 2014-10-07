@@ -1,0 +1,209 @@
+<apex:page controller="Core_CCV_Controller" applyBodyTag="false" applyHtmlTag="false" sidebar="false" showHeader="false" standardStylesheets="false" renderAs="pdf">
+<html>
+
+<head>
+    <style>
+        <!--
+        @page {
+                size:A4 landscape;
+              }
+        -->              
+        <!--
+        @font-face
+            {font-family:Verdana;
+            panose-1:2 11 6 4 3 5 4 4 2 4;}
+         /* Style Definitions */
+         p.MsoNormal, li.MsoNormal, div.MsoNormal
+            {margin-top:0in;
+            margin-right:0in;
+            margin-bottom:8.0pt;
+            margin-left:0in;
+            line-height:107%;
+            font-size:11.0pt;
+            font-family:"Calibri","sans-serif";}
+        -->
+    </style>    
+</head>
+
+<body lang="EN-US">
+    <div class="WordSection1" style="inline-block">        
+        <p class="MsoNormal" style='text-align:center;width:100%'><b><span
+        style='font-size:16.0pt;line-height:107%;font-family:"Verdana","sans-serif";
+        color:#0070C0;'>{!ccvRec.Name}</span></b></p>
+        
+        <p class="MsoNormal" style='text-align:center;width:100%'><b><span
+        style='font-size:14.0pt;line-height:107%;font-family:"Verdana","sans-serif";
+        color:#0070C0;'>The Value Chain</span></b></p>
+        
+        <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" align="left"
+         style='border-collapse:collapse;border:none;margin-left:6.75pt;margin-right:
+         6.75pt'>
+         <tr style='height:44.5pt'>
+          <td width="20%" valign="top" style='width:20.54%;border:solid windowtext 1.0pt;
+          background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><b><span style='font-family:"Verdana","sans-serif";color:white'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Objectives</span></b></p>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><b><span style='font-family:"Verdana","sans-serif";color:white'>&nbsp;</span></b></p>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal;margin-top:-20px'><b><span style='font-family:"Verdana","sans-serif";color:white'>Functions</span></b></p>
+          </td>
+          <td width="13%" valign="top" style='width:13.08%;border:solid windowtext 1.0pt;
+          border-left:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='font-size:13.0pt;font-family:"Verdana","sans-serif";
+          color:white'>KPI</span></p>
+          </td>
+          <td width="21%" valign="top" style='width:21.8%;border:solid windowtext 1.0pt;
+          border-left:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='font-size:13.0pt;font-family:"Verdana","sans-serif";
+          color:white'>Challenges</span></p>
+          </td>
+          <td width="17%" valign="top" style='width:17.46%;border:solid windowtext 1.0pt;
+          border-left:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='font-size:13.0pt;font-family:"Verdana","sans-serif";
+          color:white'>Wider Goals</span></p>
+          </td>
+          <td width="27%" valign="top" style='width:27.12%;border:solid windowtext 1.0pt;
+          border-left:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='font-size:13.0pt;font-family:"Verdana","sans-serif";
+          color:white'>Intel Value Proposal</span></p>
+          </td>
+         </tr>
+         <tr style='height:44.5pt'>
+          <td width="20%" valign="top" style='width:20.54%;border:solid windowtext 1.0pt;
+          border-top:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='color:white'>{!ccvDetail[0].Function__c}</span></p>
+          </td>
+          <td width="13%" valign="top" style='width:13.08%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[0].KPI__c}</p>
+          </td>
+          <td width="21%" valign="top" style='width:21.8%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[0].Challenges__c}</p>
+          </td>
+          <td width="17%" valign="top" style='width:17.46%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[0].Goals__c}</p>
+          </td>
+          <td width="27%" valign="top" style='width:27.12%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[0].Proposals__c}</p>
+          </td>
+         </tr>
+         <tr style='height:44.5pt'>
+          <td width="20%" valign="top" style='width:20.54%;border:solid windowtext 1.0pt;
+          border-top:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='color:white'>{!ccvDetail[1].Function__c}</span></p>
+          </td>
+          <td width="13%" valign="top" style='width:13.08%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[1].KPI__c}</p>
+          </td>
+          <td width="21%" valign="top" style='width:21.8%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[1].Challenges__c}</p>
+          </td>
+          <td width="17%" valign="top" style='width:17.46%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[1].Goals__c}</p>
+          </td>
+          <td width="27%" valign="top" style='width:27.12%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[1].Proposals__c}</p>
+          </td>
+         </tr>
+         <tr style='height:44.5pt'>
+          <td width="20%" valign="top" style='width:20.54%;border:solid windowtext 1.0pt;
+          border-top:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='color:white'>{!ccvDetail[2].Function__c}</span></p>
+          </td>
+          <td width="13%" valign="top" style='width:13.08%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[2].KPI__c}</p>
+          </td>
+          <td width="21%" valign="top" style='width:21.8%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[2].Challenges__c}</p>
+          </td>
+          <td width="17%" valign="top" style='width:17.46%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[2].Goals__c}</p>
+          </td>
+          <td width="27%" valign="top" style='width:27.12%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:44.5pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[2].Proposals__c}</p>
+          </td>
+         </tr>
+         <tr style='height:49.0pt'>
+          <td width="20%" valign="top" style='width:20.54%;border:solid windowtext 1.0pt;
+          border-top:none;background:#00B0F0;padding:0in 5.4pt 0in 5.4pt;height:49.0pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'><span style='color:white'>{!ccvDetail[3].Function__c}</span></p>
+          </td>
+          <td width="13%" valign="top" style='width:13.08%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:49.0pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[3].KPI__c}</p>
+          </td>
+          <td width="21%" valign="top" style='width:21.8%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:49.0pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[3].Challenges__c}</p>
+          </td>
+          <td width="17%" valign="top" style='width:17.46%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:49.0pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[3].Goals__c}</p>
+          </td>
+          <td width="27%" valign="top" style='width:27.12%;border-top:none;border-left:
+          none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+          padding:0in 5.4pt 0in 5.4pt;height:49.0pt'>
+          <p class="MsoNormal" style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          normal'>{!ccvDetail[3].Proposals__c}</p>
+          </td>
+         </tr>
+        </table>
+        
+        <p class="MsoNormal" style="display:inline-block; float:left">         
+          <img width="688" height="52" id="Picture 2" src="{!$Resource.IntelLogoFooter}" style="margin-left: 9px; margin-top:-16px"/>
+        </p>        
+    </div>                        
+</body>                    
+
+</html>     
+</apex:page>

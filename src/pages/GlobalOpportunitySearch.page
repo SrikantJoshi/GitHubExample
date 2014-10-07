@@ -1,0 +1,52 @@
+<apex:page standardController="Opportunity" extensions="GlobalOpportunitySearchCon" id="thePage" title="Opportunity Global Search">
+    <apex:pageMessages />
+    <apex:sectionHeader title="Opportunity" subtitle="Global Search"/>
+    <apex:form id="theForm">
+        <apex:pageBlock title="Criteria" id="theBlock">
+            <apex:pageBlockSection title="Details" collapsible="false">
+                <apex:inputField value="{!Opportunity.Name}" required="false"/>
+                <apex:inputField value="{!Opportunity.AccountId}"/>
+                <apex:inputField value="{!Opportunity.Type}"/>
+                <apex:inputField value="{!Opportunity.StageName}" required="false"/>
+                <apex:inputField value="{!Opportunity.OwnerId}" required="false"/>
+                <apex:inputField value="{!Opportunity.Probability}" required="false"/>
+            </apex:pageBlockSection>
+            <div align="center">
+                <apex:commandButton title="Search" value="Search" action="{!searchOpportunities}" 
+                        rerender="thePage:theForm:theBlock:thePanel" status="processStatus"/>
+            </div>
+            <div id="divButton" style="height: 10px">
+                <apex:actionStatus id="processStatus">
+                    <apex:facet name="start">
+                        <center>
+                            <img src="/img/loading32.gif" border="0" height="20px" width="20px"/>
+                        </center>
+                    </apex:facet>
+                </apex:actionStatus>
+            </div>
+            <apex:outputPanel id="thePanel">
+                <apex:pageBlockSection title="Results" columns="1" rendered="{!lOpportunities.size>0}" collapsible="false" id="resultsSection">
+                    <apex:pageBlockTable value="{!lOpportunities}" var="opp" width="100%">
+                        <apex:column headerValue="Name">
+                            <apex:outputLink value="/{!opp.Id}" target="_blank">{!opp.Name}</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!opp.AccountId}"/>
+                        <apex:column value="{!opp.OwnerId}"/>
+                        <apex:column value="{!opp.Type}"/>
+                        <apex:column value="{!opp.Amount}"/>
+                        <apex:column value="{!opp.StageName}"/>
+                        <apex:column value="{!opp.Probability}"/>
+                        
+                        <!--
+                        <apex:repeat value="{!$ObjectType.Opportunity.FieldSets.SearchPageSet}" var="f"> 
+                            <apex:column headerValue="Name">
+                                <apex:outputText value="{!opp.[f]}"/>
+                            </apex:column>
+                        </apex:repeat>
+                        -->
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

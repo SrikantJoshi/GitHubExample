@@ -1,0 +1,5 @@
+<apex:page standardController="CCV__c"  
+     extensions="Core_CCV_CloneController"
+     action="{!cloneWithItems}">
+     <apex:pageMessages />
+</apex:page>

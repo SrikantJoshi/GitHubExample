@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Solution Milestones tied to a given opportunity</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Milestone_Description__c</fullName>
+        <description>Description of the milestone</description>
+        <externalId>false</externalId>
+        <label>Milestone Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Milestone_Due_Date__c</fullName>
+        <description>Due Date for the milestone</description>
+        <externalId>false</externalId>
+        <label>Milestone Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Milestone__c</fullName>
+        <externalId>false</externalId>
+        <label>Milestone</label>
+        <picklist>
+            <controllingField>Solution_Focus__c</controllingField>
+            <picklistValues>
+                <fullName>Pilot</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <controllingFieldValues>Aepona Services</controllingFieldValues>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POC</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <controllingFieldValues>Aepona Services</controllingFieldValues>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deployment</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design Win / GTM planning</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Discovery/Path Finding</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concept Discovery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Platform/Arch Definition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Local Marketing</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Implementation</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cust Ref Prog</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP / Integrator Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Launch/ Deployment, Ramp/Scale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POC Hardened/Beta</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design Commit/Design In/Trial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Launch</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Added as a Standard Offering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POC defined for End User w/ business cas</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel wins or partners to win</fullName>
+                <controllingFieldValues>Alternate Compute Model</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deliver Intel Teach/Learn and/or CAG Inf</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Go-To-Market Deployment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concept Pilot Hardening/Alpha</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concept Scaled at End User</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP Certification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non Rev DW Milestones</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influence Tender (outside EU)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rev Eligible DWs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel Platform Adoption</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Playbook Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Launch Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influence Specification (outside EU)</fullName>
+                <controllingFieldValues>2 in 1s</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity the Solution Milestone is associated with</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Solution Milestones</relationshipLabel>
+        <relationshipName>Solution_Milestones</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Results_Key_Learnings__c</fullName>
+        <description>Results and Key Learning from the MIlestone</description>
+        <externalId>false</externalId>
+        <label>Results Key Learnings</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solution_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution Area</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Adjacent Tech &amp; Enterprise TAM Expansion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Big Data</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Manageability</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Productivity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Virtualization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cloud Solutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP / Telco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare Solutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC/MIC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IoT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refresh/Ramp/Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RISC/Mission Critical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software or Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Solution_Focus__c</fullName>
+        <externalId>false</externalId>
+        <label>Solution Focus</label>
+        <picklist>
+            <controllingField>Solution_Area__c</controllingField>
+            <picklistValues>
+                <fullName>2 in 1s</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aepona Services</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alternate Compute Model</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Big Data Analytics and Infrastructure</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client Refresh/Ramp/Other</fullName>
+                <controllingFieldValues>Refresh/Ramp/Other</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cloudera</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco Comms Cloud – Sell Thru</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco Comms Devices – Sell Thru</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco Comms Devices – Sell With</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco Network Infra/DC/Cloud</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco PC/Tablet/Devices</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco PC/Tablet – Sell Thru</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco PC/Tablet – Sell With</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms SP/Telco Services on IA - Sell Thru</fullName>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Center Manager SW</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Driving New Embedded Business</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expressway Services Gateway or Tokenization</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare Big Data and Analytics</fullName>
+                <controllingFieldValues>Healthcare Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare IT Infrastructure</fullName>
+                <controllingFieldValues>Healthcare Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Higher Education</fullName>
+                <controllingFieldValues>Education</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Performance Computing</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Performance Computing - Sell Thru</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel CAS (Cache Accl. SW)</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel Hadoop SW and Services</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel SSDs for Business Clients</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <controllingFieldValues>Client Manageability</controllingFieldValues>
+                <controllingFieldValues>Client Productivity</controllingFieldValues>
+                <controllingFieldValues>Client Virtualization</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel SSDs for Data Center</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <controllingFieldValues>Client Virtualization</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>RISC/Mission Critical</controllingFieldValues>
+                <controllingFieldValues>Refresh/Ramp/Other</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IoT: Aggregation</fullName>
+                <controllingFieldValues>IoT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IoT: Embedded</fullName>
+                <controllingFieldValues>IoT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IoT: Gateway</fullName>
+                <controllingFieldValues>IoT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IoT: Sensor</fullName>
+                <controllingFieldValues>IoT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV Design Win - Sell Thru</fullName>
+                <controllingFieldValues>Scale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>K12</fullName>
+                <controllingFieldValues>Education</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lustre or Intel Manager for Lustre</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mashery Services</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>McAfee Influence</fullName>
+                <controllingFieldValues>Client Security</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC Technology</fullName>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mission Critical</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>RISC/Mission Critical</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile Point of Care</fullName>
+                <controllingFieldValues>Healthcare Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multicore Performance - SSG</fullName>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orchestration</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RCM/AIM Suite and Retail-related Software</fullName>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security and Intel Technologies</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sell Up</fullName>
+                <controllingFieldValues>Refresh/Ramp/Other</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sell with Cloud Providers</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Server Refresh/Ramp/Other</fullName>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>RISC/Mission Critical</controllingFieldValues>
+                <controllingFieldValues>Refresh/Ramp/Other</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Assurance Administrator</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Software or Services</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software Defined Networking / NFV</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software Defined Storage</fullName>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solution Provider / Integrator Enablement - Sell Thru</fullName>
+                <controllingFieldValues>Scale</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Storage and IA Technology</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <controllingFieldValues>Big Data</controllingFieldValues>
+                <controllingFieldValues>Cloud Solutions</controllingFieldValues>
+                <controllingFieldValues>Comms SP / Telco</controllingFieldValues>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <controllingFieldValues>RISC/Mission Critical</controllingFieldValues>
+                <controllingFieldValues>Refresh/Ramp/Other</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tablets</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TAM expansion thru 1Mx2015</fullName>
+                <controllingFieldValues>Healthcare Solutions</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Touch Application Development</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>True Scale Influence</fullName>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ultrabook/Other Client TAM Expansion</fullName>
+                <controllingFieldValues>Adjacent Tech &amp; Enterprise TAM Expansion</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vocational/Lifelong Learning</fullName>
+                <controllingFieldValues>Education</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro Implementation</fullName>
+                <controllingFieldValues>Client Manageability</controllingFieldValues>
+                <controllingFieldValues>Client Productivity</controllingFieldValues>
+                <controllingFieldValues>Client Security</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Win vs. RISC</fullName>
+                <controllingFieldValues>RISC/Mission Critical</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workstation Solutions</fullName>
+                <controllingFieldValues>HPC/MIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The status of this solution milestone</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Initiated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Win</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Use_Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Use Case</label>
+        <picklist>
+            <controllingField>Milestone__c</controllingField>
+            <picklistValues>
+                <fullName>Any Deep products (DeepSAFE, DeepCOMMAND</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atom: Airline flight attendant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atom: Field ruggedized device</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atom: Financial Services and Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atom: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atom: Smartphones in Enterprise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atom: Tablets - Enterprise Use Cases</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Access Ntwrks (wireless/line/WiFi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Big Data</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Business Services (vPRO/Connectio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Cloud build-out (Hardware and Sof</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Connected Systems (M2M/HEMS/Medic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Consumer Services (LBS/Security/g</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Content Management (Dig sign/Inte</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Content Processing (media process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Core Network</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Data Center Mission Critical OSS/</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Data Center Refresh (Hardware and</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Data Center SW Ingredients</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Data Mining (Privacy/autonomous/p</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Desktop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Intelligent Systems (IoT, IVI, Di</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Media (Videostreaming/Media Vault</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Network Function Virtualization (</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Network Management (OSS/BSS/SIM)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Notebook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Set Top Box, Home Gateways</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Smartphone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: SW Defined Ntwrks (data traffic/r</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Tablet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Transport Network</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Ultrabook</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms: Unified Communications (VOIP/mess</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data center focused security solutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DCO: Cost/TCO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DCO: Leadership/Mindshare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DCO: Node Mgr Implementation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DCO: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DCO: Power Mgmt with Node Mgr/DCM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DCO: Trusted Compute Pools with TXT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DV: Application Virtualization and Strea</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DV: BYOC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DV: Data security and control</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DV: Multiple desktops on a single device</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Automotive (includes IVI)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Comms (service provider comput</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Energy (HEMS, other)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Gaming</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Home Gateways, CPE, Mediaphone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Industrial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Machine to Machine (M2M)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: MAG (Military Aerospace Govern</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Other</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded: Set Top Box</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded Retail: Digital Signage</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded Retail: Kiosk, POS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded Retail: Services/SW (AMT/AIM St</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded Retail: Store Servers, DSS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded Retail: Vending, Tablets, ATM,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Biological Sciences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: CAD/CAE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Chem Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Dig Content Creation and Dist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: EDA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Financial Analyses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: GEO Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Govt Labs and Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: National Defense</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Telco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: University and Academic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hadoop: Weather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Care Worker</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Cloud based E.H.R.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Collaborative Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Emergency Room admittance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: EMR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Epic E.H.R on Xeon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Healthcare Encryption</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: HIE from Cloud</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Next Generation Sequencing Appliance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: PACS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Physician Order Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HC: Provider Rounds</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Biological Sciences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: CAD/CAE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Chem Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Dig Content Creation and Dist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: EDA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Financial Analyses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: GEO Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Govt Labs and Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: National Defense</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Other</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: University and Academic</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPC: Weather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel Manager for Lustre</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Big Data Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Cloud Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: DW Mlstn: Drive adoption of Intel P</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: DW Mlstn: Intel Platform/Technlgy T</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: DW Mlstn: Secure passing SW Assessm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: DW Mlstn: Secure Platform/Technolog</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: DW Mlstn: Secure Pltfrm/Technlgy En</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Education Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Exhilarate Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Financial Services Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Grow Intel BOM MSS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Heathcare Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: HPC Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: IIEP (SSG funded) Playbooks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Intel exec contrib in ISV Launch/Us</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Intel Session/Demo at ISV Launch/Us</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Intel Social Media support of ISV L</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: ISV content in the IA enabled s/w m</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: ISV exec contrib in Intel Launch/Co</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: ISV Sessions/Demos at Intel Launch/</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: ISV Social Media support of Intel L</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Playbook Collateral / Proof Point</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Adjacency Platform Design Wi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Competitive and/or Transform</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Data Center Hosting/Cloud up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Intel Software Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Joint Sales Pipeline EU Win</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Many Integrated Core (MIC) P</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure NextGen Core Platform Transi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure PMR in support of Intel Laun</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Secure Ultrabook, Tablet and Smartp</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV: Update ISV IA Performance/Sizing co</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lustre</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Biological Sciences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: CAD/CAE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Chem Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Dig Content Creation and Dist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Financial Analyses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: GEO Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Govt Labs and Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: National Defense</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: University and Academic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MIC: Weather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other McAfee Collaboration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OTP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PKI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Comms: Standard internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: FCOE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Leadership/Mindshare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Node Mgr Implementation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Power Mgmt with Node Mgr/</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: SR-IOV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Trusted Compute Pools wit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private Cloud: Unified Ntwrk w/10Gb for</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Protected Transaction Display</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Cloud Architecture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Cloud Provider</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Cloud Usage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Comms: Content delivery (I</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Leadership/Mindshare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Power Mgmt with Node Mgr/D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Trusted Compute Pools with</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Cloud: Unified Ntwrk w/10Gb for F</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Server: Growth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Server: Other</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Server: Refresh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: App Migration Factory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Client Aware Cloud</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Client Virtualization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Cloud</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Contest SP Registration/Participants</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enablement beyond the PC (ISG, MCG,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enterprise Big Data</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enterprise Cloud Infrastructure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enterprise HPC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enterprise Migration / Modernization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enterprise Mobility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Enterprise Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: HPC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: MAP Program 50% Complete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Marketing Program 100% Complete w/RO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Marketing Program Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Other (ISG)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Partner Press Coverage with Intel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Partner Solution Briefs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: vPro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Workplace BYOD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Workplace Manageability</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Workplace Mobility</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SP: Workplace Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TS: CAD/CAE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TS: Chem Sciences and Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TS: Govt Labs and Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TS: Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TS: University and Academic</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Agent Presence Checking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO: AMT</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: AT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Easy Reimage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Fast Call for Help (CIRA)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Fix it While I Sleep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Green Power Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Hardware Inventory Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Instant Back to Work</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: IPT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO: IPT/PKI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Isolation and Recovery (System Def</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: KVM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: KVM/Remote Diagnosis and Repair</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO: LBS</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: McAfee Deep Command</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: McAfee Deep Defender</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Multiple/Other (Add detail in key</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: New SCS8/9 Deployment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO: Other</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO: ProSSD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO: ProWidi</fullName>
+                <controllingFieldValues>Pilot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro: Security with McAfee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPRO mcAfee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro Pilots:  Biz Tablets, Pro SSD, Pro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>vPro UB: Smart Connect, Rapid Start, or</fullName>
+                <controllingFieldValues>POC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WS: CAD/CAE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WS: EDA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WS: University and Academic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Solution Milestone</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SM-{0000000}</displayFormat>
+        <label>Solution Milestone ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Solution Milestones</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,120 @@
+<apex:page standardController="opportunity" sidebar="false">
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.gridtable {
+    border-width: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+}
+
+table.none {
+    width:100%;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+}
+table.none td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    vertical-align: top;
+}
+
+</style>
+
+
+       <table width="100%" class="gridtable">
+       <!---  Start Grid -->
+       <tr>
+          <th bgcolor="#E0E0E0">Opportunity Name </th>
+          <th bgcolor="#E0E0E0">Expected Revenue </th>
+          <th bgcolor="#E0E0E0">Status</th>
+          <th bgcolor="#E0E0E0">Products </th>
+          <th bgcolor="#E0E0E0">Descriptive Features</th>
+          <th bgcolor="#E0E0E0">Team Members </th>
+       </tr>
+
+       <tr>
+         <td> <a href="https://cs21.salesforce.com/006q0000001rUOE"> Big Data for Toshiba - Q3 - Server </a> </td>
+         <td> $10,100.00 </td>
+         <td> Open </td>
+         <td> 
+            <table class="none">
+              <tr>
+                 <td>INTEL ENTERPRISE EDITION FOR LUSTRE* SOFTWARE, SUPPORT</td>
+              </tr>
+              <tr>
+                  <td>Intel Xeon E5 - 2680 V2 (25M C1 2.8 GHz) </td>
+              </tr> 
+           </table>
+         
+         </td>
+         <td> 
+            <table class="none">         
+              <tr>
+                 <td>Form Factor</td>
+                 <td>Blade</td>
+              </tr>
+              <tr>
+                 <td>O/S</td>              
+                 <td>Windows Server</td>
+              </tr>                 
+           </table>
+         
+         </td>
+         <td> Derek, Dave H., Brian M., John, Teena, etc.</td>                                             
+       </tr>
+       
+       <tr>
+         <td> <a href="https://cs21.salesforce.com/006q0000001rUO4"> Big Data for Toshiba - Q3 - Server </a> </td>
+         <td> $10,200.00 </td>
+         <td> Open </td>
+         <td> 
+            <table class="none">
+              <tr>
+                 <td>Intel Xeon E5 - 2680 V2 (25M C1 2.8 GHz)</td>
+              </tr>
+              <tr>
+                  <td>LUSTRE* OR INTEL MANAGER FOR LUSTRE* SOFTWARE, PROFESSIONAL SERVICES </td>
+              </tr> 
+              <tr>
+                  <td>McAfee Security </td>
+              </tr>               
+           </table>
+         
+         </td>
+         <td> 
+            <table class="none">         
+              <tr>
+                 <td>Entry SPP</td>
+                 <td>$250 - $499</td>
+              </tr>
+              <tr>
+                 <td>Form Factor</td>
+                 <td>Business Gateway</td>
+              </tr>                 
+           </table>
+         
+         </td>
+         <td> Derek, Dave H., Brian M., John, Teena, etc.</td>                                             
+       </tr>
+       
+       
+       </table>
+
+</apex:page>

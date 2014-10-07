@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Mobile_Product</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Mobile_Product</fullName>
+        <fields>Name</fields>
+        <fields>Product__c</fields>
+        <fields>Platform_Name__c</fields>
+        <label>Mobile Product</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Code_Name_EPM_ID__c</fullName>
+        <description>VPLCH Level 4</description>
+        <externalId>false</externalId>
+        <label>Code Name EPM ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Code_Name__c</fullName>
+        <description>VPLCH Level 4</description>
+        <externalId>false</externalId>
+        <label>Code Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Controlled_Technology__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to designate controlled technology</description>
+        <externalId>false</externalId>
+        <label>Controlled Technology</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Division_Code_Short_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Division Code Short Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Code__c</fullName>
+        <description>A list of all divisions this product could be associated with across the VPH and VPLCH Hierarchy</description>
+        <externalId>false</externalId>
+        <label>Division Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_of_Intel_Service_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End of Intel Service Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <description>External ID of the record in the upstream system</description>
+        <externalId>false</externalId>
+        <label>External ID</label>
+        <length>128</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Source_Name__c</fullName>
+        <description>The source of the external upstream system</description>
+        <externalId>false</externalId>
+        <label>External Source Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <inlineHelpText>VPLCH Level 1</inlineHelpText>
+        <picklist>
+            <picklistValues>
+                <fullName>Family 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Family 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Family 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Family 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Family 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GRANTLEY EP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BAY TRAIL M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BAY TRAIL D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BAY TRAIL TABLET</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel® High End Desktop Processors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intel® High End Notebook Processors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SKYLAKE DESKTOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SKYLAKE Y</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SKYLAKE NOTEBOOK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Group_Code_Short_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Code Short Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_Code__c</fullName>
+        <description>Group Code</description>
+        <externalId>false</externalId>
+        <label>Group Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hierarchy_ID__c</fullName>
+        <description>ID for the hierarchy that the record is being sourced from</description>
+        <externalId>false</externalId>
+        <label>Hierarchy ID</label>
+        <length>128</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hierarchy_Name__c</fullName>
+        <description>Description of which Hierarchy this record was mastered in</description>
+        <externalId>false</externalId>
+        <label>Hierarchy Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pipeline_Launch_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pipeline Launch Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Platform_Config_EPM_ID__c</fullName>
+        <description>VPLCH Level 2</description>
+        <externalId>false</externalId>
+        <label>Platform Config EPM ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform_Config__c</fullName>
+        <description>A more detailed view of the platform</description>
+        <externalId>false</externalId>
+        <label>Platform Config</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform_EPM_ID__c</fullName>
+        <description>VPLCH Level 1</description>
+        <externalId>false</externalId>
+        <label>Platform EPM ID</label>
+        <length>128</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform_Name__c</fullName>
+        <description>VPLCH Level 1</description>
+        <externalId>false</externalId>
+        <label>Platform Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family_EPM_ID__c</fullName>
+        <description>VPH Level 2 EPM ID</description>
+        <externalId>false</externalId>
+        <label>Product Family EPM ID</label>
+        <length>128</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family__c</fullName>
+        <description>VPH Level 2</description>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Series_EPM_ID__c</fullName>
+        <description>EPM ID for the VPH Level 3</description>
+        <externalId>false</externalId>
+        <label>Product Series EPM ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Series__c</fullName>
+        <description>Product Series</description>
+        <externalId>false</externalId>
+        <label>Product Series</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Status__c</fullName>
+        <description>Integration Field - fg_mtrl_sts_cd</description>
+        <externalId>false</externalId>
+        <label>Product Status</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Type_EPM_ID__c</fullName>
+        <description>VPLCH lvl 3
+VPH lvl 1</description>
+        <externalId>false</externalId>
+        <label>Product Type EPM ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <description>Product type</description>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vertical_Segment_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Vertical Segment Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>Platform_Name__c</columns>
+        <columns>Platform_Config__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Product_Series__c</columns>
+        <columns>Product__c</columns>
+        <columns>Pipeline_Launch_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Platform_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Series__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.FAMILY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Controlled_Technology__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Platform_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Controlled_Technology__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Series__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product__c</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

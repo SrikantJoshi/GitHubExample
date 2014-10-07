@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CRM_Integration_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM Integration User ID</shortDescription>
+        <value>005q0000000Hk8O</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Geo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Account Geo</shortDescription>
+        <value>Account_Geo__c</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Sub_Geo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Account Sub Geo</shortDescription>
+        <value>Account_Sub_Geo__c</value>
+    </labels>
+    <labels>
+        <fullName>Core_BillingCountry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core BillingCountry</shortDescription>
+        <value>BillingCountry</value>
+    </labels>
+    <labels>
+        <fullName>Core_BillingState</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core BillingState</shortDescription>
+        <value>BillingState</value>
+    </labels>
+    <labels>
+        <fullName>Core_Exception</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Exception</shortDescription>
+        <value>The following exception has occurred:</value>
+    </labels>
+    <labels>
+        <fullName>Core_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core ID</shortDescription>
+        <value>ID</value>
+    </labels>
+    <labels>
+        <fullName>Core_Lead_Country</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Lead Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Core_Lead_Geo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Lead Geo</shortDescription>
+        <value>Core_Lead_Geo__c</value>
+    </labels>
+    <labels>
+        <fullName>Core_Lead_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Lead State</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>Core_Lead_Sub_Geo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Lead Sub Geo</shortDescription>
+        <value>Core_Lead_Sub_Geo__c</value>
+    </labels>
+    <labels>
+        <fullName>Exception</fullName>
+        <categories>Exception Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Message</shortDescription>
+        <value>The following error has occurred.</value>
+    </labels>
+    <labels>
+        <fullName>Exception_Field_Message</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Field Message</shortDescription>
+        <value>Lead fields that affected this error:</value>
+    </labels>
+</CustomLabels>

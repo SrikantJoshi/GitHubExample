@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Private</cacheControl>
+    <contentType>image/jpeg</contentType>
+    <description>This button image is for demo purposes only and can be deleted after the design phase of the project</description>
+</StaticResource>

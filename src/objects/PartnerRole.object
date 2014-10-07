@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ReverseRole</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Cloud Service Provider</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design House</fullName>
+                <default>false</default>
+                <reverseRole>Client</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DMR</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Embedded Board Manufacturer</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMS</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ESF Firm</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fellow Traveler</fullName>
+                <default>false</default>
+                <reverseRole>Fellow Traveler</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISV/OSV</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ITO</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LOEM</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ODM</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retailer</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solution Provider</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>System Integrator</fullName>
+                <default>false</default>
+                <reverseRole>Client</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telco/Service Provider</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TEM</fullName>
+                <default>false</default>
+                <reverseRole>Vendor</reverseRole>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+</CustomObject>
